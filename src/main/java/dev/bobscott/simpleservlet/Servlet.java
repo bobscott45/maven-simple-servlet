@@ -2,12 +2,13 @@ package dev.bobscott.simpleservlet;
 
 import com.mysql.cj.x.protobuf.Mysqlx;
 
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.DriverManager;
 
-@javax.servlet.annotation.WebServlet(value = "/dbtest")
+@WebServlet(value = "/dbtest")
 public class Servlet extends javax.servlet.http.HttpServlet {
 
 
